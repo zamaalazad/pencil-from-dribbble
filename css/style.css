@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+body {
+  background: #FEFFFF;
+  font-family: 'Source Sans pro', 'sans-serif';
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.header h4 {
+  color: #005FFF;
+  font-size: 2em;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  justify-content: space-between;
+}
+
+.header ul {
+  display: flex;
+  justify-self: center;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.header ul {
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.navi li {
+  margin-left: 20px;
+  color: #616263;
+}
+
+.navi li:hover {
+  color: #00E05A;
+}
+
+.data li {
+  margin-left: 30px;
+}
+
+.data li:first-child {
+  color: #005FFF;
+}
+
+.data li:last-child {
+  background: #005FFF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 40px;
+  margin-bottom: 150px;
+  margin-top: 80px;
+}
+
+.hero .left {
+  margin-top: 70px;
+  text-transform: capitalize;
+}
+
+.hero .left * {
+  margin-bottom: 30px;
+}
+
+.hero .left h3 {
+  font-weight: 400;
+  color: #868788;
+  font-size: 1em;
+}
+
+.hero .left a {
+  text-decoration: none;
+  background: #00E05A;
+  color: #fff;
+  padding: 15px 35px;
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: 0px 0px 29px 0px #cfcdcf;
+}
+
+.hero .right img {
+  width: 100%;
+}
+
+figure {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 100px;
+  justify-content: center;
+}
+
+figure .videos {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  border-radius: 0 25px 0 25px;
+  box-shadow: 0px 0px 29px 0px #cfcdcf;
+}
+
+figure .videos img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+figure .videos i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+figure .videos .figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: inherit;
+}
+
+figure .details p {
+  color: #868788;
+}
+
+figure .details a {
+  text-decoration: none;
+  color: #00E05A;
+  position: relative;
+  display: block;
+  font-size: .8em;
+}
+
+figure .details a:before {
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background: #00E05A;
+  content: '';
+  top: 50%;
+  left: 25%;
+}
+
+.product_completion ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.product_completion ul li {
+  text-align: center;
+}
+
+.product_completion ul li h1 {
+  line-height: 50%;
+  color: #005FFF;
+}
+
+.product_completion ul li p {
+  color: #868788;
+  font-size: 1em;
+}
+
+.service {
+  background: #f4faff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 0 100px 0;
+}
+
+.serviceBox {
+  width: 80%;
+  margin: auto;
+}
+
+.serviceHead {
+  text-align: center;
+}
+
+.serviceHead hr {
+  width: 5%;
+  border: 2px solid #00E05A;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  margin-top: 100px;
+}
+
+.servicesList {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px;
+  height: 350px;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 8px;
+}
+
+.servicesList > i {
+  font-size: 5em;
+  color: #005FFF;
+}
+
+.servicesList h4 {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.servicesList a, .servicesList p {
+  text-decoration: none;
+  position: relative;
+  bottom: -250px;
+  transition: bottom 0.4s cubic-bezier(0, -0.03, 0, 1.1);
+  color: #ffffff;
+}
+
+.servicesList a i, .servicesList p i {
+  font-size: 2em;
+}
+
+.servicesList a {
+  transition-delay: 0.1s;
+}
+
+.servicesList p {
+  transition-delay: 0;
+}
+
+.servicesList:hover {
+  background: #00E05A;
+  box-shadow: 0px 0px 29px 0px #cfcdcf;
+}
+
+.servicesList:hover * {
+  bottom: 0;
+  color: #ffffff;
+}
+
+.project {
+  margin: 50px 0;
+}
+
+.project main {
+  display: grid;
+  grid-template-columns: 400px 600px;
+  justify-content: space-between;
+}
+
+.webLeft {
+  margin-top: 150px;
+}
+
+.webLeft h1 {
+  letter-spacing: 1px;
+  font-size: 2em;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.webLeft h1:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1.5em;
+  height: 4px;
+  background: #00E05A;
+}
+
+.webLeft p {
+  color: #868788;
+  font-size: 110%;
+  font-weight: 100;
+}
+
+.webLeft a {
+  text-decoration: none;
+  padding: 10px 40px;
+  background: #EEFEF8;
+  margin-top: 20px;
+  display: inline-block;
+  border: 1px solid #00E05A;
+  border-radius: 20px;
+  font-weight: 400;
+  color: #00E05A;
+  letter-spacing: .5px;
+}
+
+.webRight {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-gap: 10px;
+}
+
+.webRight figure {
+  width: 250px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.webRight figure img {
+  width: 100%;
+}
+
+.webRight figure:hover figcaption {
+  display: block;
+  box-shadow: 0px 0px 29px 0px #cfcdcf;
+}
+
+.webRight figure figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00E05A;
+  z-index: 1;
+  top: 0;
+  display: none;
+}
+
+.webRight figure figcaption a, .webRight figure figcaption p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.webRight figure figcaption a {
+  text-decoration: none;
+  background: #ffffff;
+  color: #00E05A;
+  padding: 8px 25px;
+  display: block;
+  border-radius: 50px;
+  width: 70px;
+  text-align: center;
+}
+
+.webRight figure figcaption p {
+  margin-top: 50px;
+  margin-left: -180px;
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #005FFF;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+}
